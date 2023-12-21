@@ -1,11 +1,12 @@
 import React from 'react';
 import Button from '../Button';
+import './style.scss';
 
 class Formik extends React.Component{
     render(){
         return (
-            <form>
-                <div>
+            <form className="newTask">
+                <div className="inputContainer">
                     <label htmlFor="Tarefa">
                         Adicione um novo estudo
                     </label>
@@ -17,7 +18,7 @@ class Formik extends React.Component{
                      required
                     />
                 </div>
-                <div>
+                <div className="inputContainer">
                     <label htmlFor="Tempo">
                         Tempo
                     </label>
