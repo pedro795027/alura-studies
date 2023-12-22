@@ -1,12 +1,13 @@
 import React from 'react';
-import Button from '../Button';
-import './style.scss';
+
+import style from './Formik.module.scss';
+import { Button } from '../Button';
 
 class Formik extends React.Component{
     render(){
         return (
-            <form className="newTask">
-                <div className="inputContainer">
+            <form className={style.newTask}>
+                <div className={style.inputContainer}>
                     <label htmlFor="Tarefa">
                         Adicione um novo estudo
                     </label>
@@ -18,7 +19,7 @@ class Formik extends React.Component{
                      required
                     />
                 </div>
-                <div className="inputContainer">
+                <div className={style.inputContainer}>
                     <label htmlFor="Tempo">
                         Tempo
                     </label>
@@ -32,7 +33,9 @@ class Formik extends React.Component{
                      required
                     />
                 </div>
-                <Button />
+                <Button>
+                    Adicionar
+                </Button>
             </form>
         )
     }
